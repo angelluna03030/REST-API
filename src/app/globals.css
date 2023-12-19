@@ -1,0 +1,631 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  .card3 {
+      display: flex;
+      max-width: 900px;
+      max-height: 900px;
+      margin: auto;
+      min-height: 250px;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 1px 2px #5c585826;
+      border-radius: 10px;
+    }
+    
+    
+    .card-texto3 {
+      flex: 1; /* Ocupa toda la mitad derecha */
+      padding: 20px; /* Ajusta según sea necesario */
+      order: 2; /* Cambia el orden, ahora el texto está a la derecha */
+    }
+    
+    .card-img3 {
+      flex: 1; /* Ocupa toda la mitad izquierda */
+      overflow: hidden; /* Asegura que la imagen no sobresalga del contenedor */
+      border-radius: 10px 0 0 10px; /* Bordes redondeados solo en la esquina superior izquierda */
+      order: 1; /* Cambia el orden, ahora la imagen está a la izquierda */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100px;
+    }
+    
+    .card-img3 img {
+      margin-top: 3%;
+      width: 90%;
+      height: 90%;
+      object-fit: cover; /* Ajusta según sea necesario */
+      border-radius: 10px 10px 10px 10px; /* Bordes redondeados solo en la esquina superior izquierda */
+    }
+    @media screen and (max-width: 600px) {
+      .card3 {
+        flex-direction: column;
+      }
+    
+      .card-img3 {
+        order: 1; /* Cambia el orden solo para dispositivos móviles */
+      }
+    }
+    
+    
+    
+    .card-button3 {
+      min-width: 30%;
+      min-height: 4.5vh;
+      max-width: 60%;
+      max-height: 42vh;
+      width: 17vw;
+      height: 4.5vh;
+      border: 1px solid #252525;
+      display: flex;
+      padding: 0.3em;
+      cursor: pointer;
+      border-radius: 50px;
+      transition: 0.3s ease-in-out;
+      justify-content: center;
+      margin: auto;
+      margin-top: 20px;
+      position: relative;
+  }
+  
+  /* Estilos para pantallas más pequeñas */
+  @media only screen and (max-width: 600px) {
+      .card-button3 {
+          min-width: 70%; /* Ajusta según sea necesario */
+          max-width: 90%; /* Ajusta según sea necesario */
+      }
+  }
+  
+  
+  
+    
+    
+    
+     .card-button3 p{
+      text-align: center;
+      margin: auto;
+     }
+    
+     .card-button3 svg{
+      padding-left: 6%;
+    
+     }
+    
+    
+    
+    
+    
+     
+    .radio-inputs3 {
+      position: relative;
+      margin-top: 20px;
+      margin-left: 8px;
+      display: flex;
+      flex-wrap: wrap;
+      border-radius: 0.5rem;
+      background-color: #ffffff;
+      box-sizing: border-box;
+      box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+      padding: 0.25rem;
+      width: 90%;
+      font-size: 14px;
+   
+    }
+    
+    .radio-inputs3 .radio3 {
+      flex: 1 1 auto;
+      text-align: center;
+    }
+    
+    .radio-inputs3 .radio3 input {
+      display: none;
+    }
+    
+    .radio-inputs3 .radio3 .name3 {
+      display: flex;
+      font-weight: 600;
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0.5rem;
+      border: none;
+      padding: .5rem 0;
+      color: #000000;
+      transition: all .15s ease-in-out;
+    }
+    
+    .radio-inputs .radio input:checked + .name {
+      background-color: #EE4433;
+      color: #fff;
+      font-weight: 600;
+    }
+    
+    .description {
+      text-align: left;
+      max-width: 330px;
+      max-height: 150px;
+   display: block;
+      /* o overflow: hidden; según tus preferencias */
+      word-wrap: break-word;
+      white-space: normal;    
+  }
+    
+    
+    
+    
+    
+    
+  
+  /* Estilos generales */
+  
+  /* Estilos generales */
+  footer {
+    background-color: #EE4433;
+    color: #fff;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .social-icons {
+  
+   margin-top: 30px;
+  }
+  
+  .social-icons a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #EE4433;
+  }
+  
+  .social-icons a:last-child {
+    margin-right: 0;
+  }
+  
+  .social-icons img {
+    margin: auto;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+  }
+  
+  .footer-info p {
+    font-size: 14px;
+    margin: 0;
+    line-height: 1.5;
+  }
+  
+  /* Estilos para pantallas más pequeñas */
+  @media only screen and (max-width: 600px) {
+    .social-icons {
+        margin-bottom: 10px;
+        margin: auto;
+    }
+  
+    .social-icons a {
+        margin-right: 5px;
+    }
+  
+    .footer-info p {
+      margin: auto;
+        font-size: 12px;
+    }
+  }
+  
+  
+  
+  .card {
+    display: flex;
+    max-width: 800px;
+    max-height: 900px;
+    margin: auto;
+    min-height: 500px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 4px 1px #5c585826;
+    border-radius: 10px;
+    font-family: sans-serif;
+  }
+  
+  
+  .card-texto {
+    flex: 1; /* Ocupa toda la mitad derecha */
+    padding: 20px; /* Ajusta según sea necesario */
+    order: 2; /* Cambia el orden, ahora el texto está a la derecha */
+  }
+  
+  .card-img {
+    flex: 1; /* Ocupa toda la mitad izquierda */
+    overflow: hidden; /* Asegura que la imagen no sobresalga del contenedor */
+    border-radius: 10px 0 0 10px; /* Bordes redondeados solo en la esquina superior izquierda */
+    order: 1; /* Cambia el orden, ahora la imagen está a la izquierda */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+  }
+  
+  .card-img img {
+    margin-top: 3%;
+    width: 90%;
+    height: 90%;
+    object-fit: cover; /* Ajusta según sea necesario */
+    border-radius: 10px 10px 10px 10px; /* Bordes redondeados solo en la esquina superior izquierda */
+  }
+  @media screen and (max-width: 600px) {
+    .card {
+      flex-direction: column;
+    }
+  
+    .card-img {
+      order: 1; /* Cambia el orden solo para dispositivos móviles */
+    }
+  }
+  
+  
+  
+  .input input {
+    max-width: 300px;
+    width: 300px;
+    padding: 10px 15px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin: 10px;
+    text-decoration-style: none;
+    outline: none;
+  }
+  
+  @media (max-width: 768px) {
+    .input input {
+      max-width: 100%;
+    }
+  }
+  
+  .input a {
+  
+    color: black;
+  }
+  input:active{
+    border: 2px solid #ccc;
+  }
+  
+  
+  .card h1{
+  margin-bottom: 30px;
+  }
+  
+  
+  .texto  a{
+    font-size: 15px;
+   
+    
+    text-decoration: none;
+    color: black;
+  margin-top: 40px;
+  margin-left: 25px;
+    justify-content: center;
+  margin: 0px 5px;
+  margin: auto;
+  }
+  
+  
+  .texto {
+   
+    display: flex;
+    justify-content: end;
+  }
+  
+  
+  
+  /* Estilos para el checkbox oculto nativo */
+  .texto input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+   margin-top: 3px;
+    border-radius: 3px;
+  
+  
+    cursor: pointer;
+    
+  }
+  .descripcion {
+    text-align: end; /* Cambiado a centrado para pantallas pequeñas */
+    margin: 0 15px; /* Reducido el margen para pantallas pequeñas */
+  }
+  
+  .descripcion a {
+    text-decoration: none;
+    color: black;
+    display: block; /* Convertido en bloque para ocupar el ancho completo del contenedor */
+    margin-top: 10px; /* Añadido espacio entre los enlaces para una mejor legibilidad */
+  }
+  /* Estilos para el diseño personalizado del checkbox */
+  
+  .btn {
+  text-align: center;
+  
+  margin-top: 30px;
+  flex-direction: column; /* Asegurarse de que el contenedor sea una columna */
+  
+  position: sticky;
+  }
+  .btn button{
+  
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: #164894;
+    align-self: flex-end; 
+  } 
+  /* Estilos para la marca del checkbox */
+  
+  .linkkkk{
+    text-decoration: none;
+    color: #000000;
+}
+  
+  .Error input {
+    
+  
+    background-image: url('./../../public/icno.png');
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: right;
+   border: 1px solid #eee;
+   border-radius: 10px;
+   margin-top: 30px;
+   margin: 10px;
+   box-shadow: 0px 0px 5px 1px #e00;
+  
+  }
+  /* Estilos para cambiar la apariencia cuando el checkbox está marcado */
+  
+  
+  
+  /* checkbox settings 👇 */
+  
+  .ui-checkbox {
+  
+    --primary-color: #1677ff;
+    --secondary-color: #fff;
+    --primary-hover-color: #4096ff;
+    /* checkbox */
+    --checkbox-diameter: 20px;
+    --checkbox-border-radius: 5px;
+    --checkbox-border-color: #d9d9d9;
+    --checkbox-border-width: 1px;
+    --checkbox-border-style: solid;
+    /* checkmark */
+    --checkmark-size: 1.2;
+  
+  }
+  
+  
+  .ui-checkbox input {
+    display: none;
+  }
+  
+  .ui-checkbox, 
+  .ui-checkbox *, 
+  .ui-checkbox *::before, 
+  .ui-checkbox *::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  .ui-checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: var(--checkbox-diameter);
+    height: var(--checkbox-diameter);
+    border-radius: var(--checkbox-border-radius);
+    background: var(--secondary-color);
+    border: var(--checkbox-border-width) var(--checkbox-border-style) var(--checkbox-border-color);
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .ui-checkbox::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-box-shadow: 0 0 0 calc(var(--checkbox-diameter) / 2.5) var(--primary-color);
+    box-shadow: 0 0 0 calc(var(--checkbox-diameter) / 2.5) var(--primary-color);
+    border-radius: inherit;
+    opacity: 0;
+    -webkit-transition: all 0.5s cubic-bezier(0.12, 0.4, 0.29, 1.46);
+    -o-transition: all 0.5s cubic-bezier(0.12, 0.4, 0.29, 1.46);
+    transition: all 0.5s cubic-bezier(0.12, 0.4, 0.29, 1.46);
+  }
+  
+  .ui-checkbox::before {
+    top: 40%;
+    left: 50%;
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 10px;
+    border-right: 2px solid var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    -webkit-transform: translate(-50%, -50%) rotate(45deg) scale(0);
+    -ms-transform: translate(-50%, -50%) rotate(45deg) scale(0);
+    transform: translate(-50%, -50%) rotate(45deg) scale(0);
+    opacity: 0;
+    -webkit-transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6),opacity 0.1s;
+    -o-transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6),opacity 0.1s;
+    transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6),opacity 0.1s;
+  }
+  
+  /* actions */
+  
+  .ui-checkbox:hover {
+    border-color: var(--primary-color);
+  }
+  
+  .ui-checkbox:checked {
+    background: var(--primary-color);
+    border-color: transparent;
+  }
+  
+  .ui-checkbox:checked::before {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%) rotate(45deg) scale(var(--checkmark-size));
+    -ms-transform: translate(-50%, -50%) rotate(45deg) scale(var(--checkmark-size));
+    transform: translate(-50%, -50%) rotate(45deg) scale(var(--checkmark-size));
+    -webkit-transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
+    -o-transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
+    transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
+  }
+  
+  .ui-checkbox:active:not(:checked)::after {
+    -webkit-transition: none;
+    -o-transition: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    transition: none;
+    opacity: 1;
+  }
+  
+  
+  
+  
+  /* Estilos para pantallas grandes */
+  .nombre input {
+    max-width: 250px;
+   
+    width: 123px;
+  }
+  .nombre {
+    display: flex;
+  }
+  .texto-registro {
+    height: 30px;
+    padding: 20px;
+  }
+  
+  .texto-registro a {
+    color: black;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .Resgistro input{
+    display: flex;
+    flex-direction: column;
+    max-width: 340px;
+    justify-content: center;  
+  }
+  /* Estilos para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .nombre input {
+      max-width: 100%;
+      width: auto;
+    }
+  
+    .texto-registro {
+      padding: 10px;
+    }
+  }
+  
+
+
+
+  
+  nav {
+    background-color: #4caf50; /* Color de fondo verde */
+    padding: 15px;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  li {
+    margin-right: 20px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+
+
+
+
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px !important;
+    z-index: 99;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 100px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .modal-content button {
+    margin-top: 30px;
+    padding: 1.3em 3em;
+ 
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.modal-content button:hover {
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.modal-content button:active {
+  transform: translateY(-1px);
+}

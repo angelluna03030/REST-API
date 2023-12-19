@@ -1,0 +1,164 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+
+
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fff;
+  
+  
+  
+  
+  }
+  
+ 
+    
+    /* Estilos para pantallas más pequeñas */
+    @media (max-width: 768px) {
+      .card-container {
+          grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Ajusta el ancho mínimo y máximo para pantallas más pequeñas. */
+      }
+  }
+  
+  .card5 {
+      width: 290px;
+      height: 450px; /* Cambiado a 'auto' para permitir que la altura se ajuste automáticamente según el contenido. */
+      padding: 0.8em;
+      background: #f5f5f5;
+      display: flex; /* Cambiado a 'flex' en lugar de 'inline-flex' para adaptarse al contenido. */
+      flex-direction: column;
+      justify-content: center;
+      display: inline-block;
+  
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      margin: 60px; /* Reducido el margen para mejorar el espaciado en pantallas más pequeñas. */
+  }
+  
+  .card-img5 {
+      width: 100%;
+      height: 55%; /* Ajustada la altura de la imagen. */
+      border-radius: 0.5rem; /* Cambiado a '0.5rem' en lugar de '.5rem' para mayor precisión. */
+      transition: 0.3s ease;
+  }
+  
+  .card-img5 img {
+      width: 100%;
+      height: 100%;
+      border-radius: 0.5rem; /* Cambiado a '0.5rem' en lugar de '.5rem' para mayor precisión. */
+      transition: 0.3s ease;
+  }
+  
+  .card-info5 {
+      padding-top: 10%;
+  }
+  
+  svg {
+      width: 20px;
+      height: 20px;
+  }
+  
+  .card-footer5 {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 10px;
+      border-top: 1px solid #ddd;
+  }
+  
+  /* Texto */
+  .text-title5 {
+      font-weight: 900;
+      font-size: 1.2em;
+      line-height: 1.5;
+  }
+  
+  .text-body5 {
+      font-size: 0.9em;
+      padding-bottom: 10px;
+  }
+  
+     /*Button*/
+     .card-button5 button{
+      border: 1px solid #252525;
+      display: flex;
+      padding: .3em;
+      cursor: pointer;
+      border-radius: 50px;
+      transition: .3s ease-in-out;
+     }
+     
+     /*Hover*/
+     .card-img5:hover {
+      transform: translateY(-25%);
+      box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+     }
+     
+  
+     
+    
+    /* Estilos de tarjetas */
+  
+  
+  
+  
+  
+  
+   .Catalogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: repeat(3, auto) 1fr; /* Tres filas automáticas para los primeros elementos y una fila flexible para los demás */
+    gap: 20px; /* Espacio entre las filas */
+    margin-bottom: 40px;
+    margin-top: 10px;
+  }
+
+
+
+  .pedidos{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+ 
+    padding-top: 10px;
+   padding: 20px;
+   
+  }
+  .pedidos .images:hover{
+    border-radius: 100px;
+    background-color: rgba(226, 196, 63, 0.25);
+    box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+  }
+ 
+  
+  nav {
+    background-color: #4caf50; /* Color de fondo verde */
+    padding: 15px;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  li {
+    margin-right: 20px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    color: #ffeb3b; /* Cambiar color al pasar el ratón sobre el enlace */
+  }

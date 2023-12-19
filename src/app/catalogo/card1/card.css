@@ -1,0 +1,150 @@
+.card2 {
+    display: flex;
+    max-width: 900px;
+    max-height: 900px;
+    margin: auto;
+    min-height: 250px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 2px #5c585826;
+    border-radius: 10px;
+  }
+
+  
+  .card-texto2 {
+    flex: 1; /* Ocupa toda la mitad derecha */
+    padding: 20px; /* Ajusta según sea necesario */
+    order: 2; /* Cambia el orden, ahora el texto está a la derecha */
+  }
+  
+  .card-img2 {
+    flex: 1; /* Ocupa toda la mitad izquierda */
+    overflow: hidden; /* Asegura que la imagen no sobresalga del contenedor */
+    border-radius: 10px 0 0 10px; /* Bordes redondeados solo en la esquina superior izquierda */
+    order: 1; /* Cambia el orden, ahora la imagen está a la izquierda */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+  }
+  
+  .card-img2 img {
+    margin-top: 3%;
+    width: 90%;
+    height: 90%;
+    object-fit: cover; /* Ajusta según sea necesario */
+    border-radius: 10px 10px 10px 10px; /* Bordes redondeados solo en la esquina superior izquierda */
+  }
+  @media screen and (max-width: 600px) {
+    .card2 {
+      flex-direction: column;
+    }
+  
+    .card-img2 {
+      order: 1; /* Cambia el orden solo para dispositivos móviles */
+    }
+  }
+  
+  
+
+
+  
+  .card-button2 {
+    min-width: 20vw;
+    min-height: 4.5vh;
+    max-width: 42vw;
+    max-height: 42vh;
+    width: 10vw;
+    height: 4.5vh;
+    border: 1px solid #252525;
+    display: flex;
+    padding: 0.3em;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: 0.3s ease-in-out;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+   
+}
+.card-button2 button{
+  color: #000000;
+  background-color: #ffffff;
+  border: none;
+  text-align: center;
+  margin-left: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  align-items: center;
+}
+
+@media screen and (max-width: 50px) {
+    .card-button2 {
+        min-width: 100%; /* Ajusta según sea necesario */
+        min-height: 10%; /* Ajusta según sea necesario */
+        width: 50%; /* Ajusta según sea necesario */
+        height: 5%; /* Ajusta según sea necesario */
+    }
+}
+
+
+
+
+   .card-button2 p{
+    text-align: center;
+    margin: auto;
+   }
+
+   .card-button2 svg{
+    padding-left: 6%;
+
+   }
+
+
+
+
+
+   
+.radio-inputs2 {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+    padding: 0.25rem;
+    width: 90%;
+    font-size: 14px;
+   
+  }
+  
+  .radio-inputs2 .radio2 {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+  
+  .radio-inputs2 .radio2 input {
+    display: none;
+  }
+  
+  .radio-inputs2 .radio2 .name2 {
+    display: flex;
+    font-weight: 600;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    border: none;
+    padding: .5rem 0;
+    color: #000000;
+    transition: all .15s ease-in-out;
+  }
+  
+  .radio-inputs2 .radio2 input:checked + .name2 {
+    background-color: #EE4433;
+    color: #fff;
+    font-weight: 600;
+  }
+
